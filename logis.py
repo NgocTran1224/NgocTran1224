@@ -60,7 +60,7 @@ elif choice == 'Xây dựng mô hình':
     st.dataframe(df.head(3))
     st.dataframe(df.tail(3))  
     
- elif choice == 'giới thiệu về chi nhánh':
+elif choice == 'giới thiệu về chi nhánh':
     st.subheader("Agribank CN Cà Mau")
     st.write("##### 1. Ngân hàng Agribank có tổng cộng 20 chi nhánh và phòng giao dịch được đặt trên 9 quận huyện của Tỉnh Cà Mau. Các chi nhánh và phòng giao dịch tập trung chủ yếu ở Thành Phố Cà Mau 6 địa điểm, Huyện Cái Nước 3 địa điểm, Huyện Ngọc Hiển 2 địa điểm, Huyện Thới Bình 2 địa điểm, Huyện Trần Văn Thời 2 địa điểm, ")
     st.image("AGRIBANK CM.jpg")
