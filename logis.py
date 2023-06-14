@@ -13,9 +13,9 @@ from sklearn import metrics
 df = pd.read_csv("credit access.csv", encoding='latin-1')
 
 st.title("Hồi quy tuyến tính")
-st.write("## Dự báo khả năng tiếp cận vốn tín dụng của nông hộ")
+st.write("## Dự báo khả năng tiếp cận vốn tín dụng của một khách hàng cá nhân")
 
-uploaded_file = st.file_uploader("Choose a file", type=['csv'])
+uploaded_file = st.file_uploader("hãy nhập dữ liệu", type=['csv'])
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file, encoding='latin-1')
     df.to_csv("data.csv", index = False)
@@ -23,7 +23,7 @@ if uploaded_file is not None:
 X = df.drop(columns=['y'])
 y = df['y']
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state= 12)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state= 14)
 
 model = LogisticRegression()
 
